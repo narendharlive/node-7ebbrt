@@ -5,7 +5,7 @@ const port = 80;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.send('./index.html');
+  res.end('./index.html');
 });
 
 server.listen(port, hostname, () => {
